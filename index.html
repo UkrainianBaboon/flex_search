@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Простий пошук</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="normalize.css" />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -15,22 +16,32 @@
   </head>
   <body>
     <div class="search_selector">
-        <button><a href="images.html">Пошук зображень</a></button>
-        <button><a href="advanced.html">Розширений пошук</a></button>
-      </div>
+      <button><a href="images.html">Пошук зображень</a></button>
+      <button><a href="advanced.html">Розширений пошук</a></button>
+    </div>
     <form class="common_form" action="https://google.com/search">
       <div class="centred_title">
-        <h1 style="font-family: Futuria; font-size: 80px;">Bamboozle</h1>
+        <h1>Bamboozle</h1>
       </div>
       <div>
         <!-- <img src="https://img.icons8.com/ios-glyphs/30/000000/search--v1.png" alt=""> -->
-        <input class="search_string" type="search" name="q" placeholder="Шукай зі мною!" />
+        <input
+          class="search_string"
+          type="search"
+          name="q"
+          placeholder="Шукай зі мною!"
+        />
       </div>
       <div>
         <input class="search_button" type="submit" value="Час відгуглити!" />
-        <input class="search_button" type="submit" name="btnI" value="Мені пощастить!" />
+        <input
+          class="search_button"
+          type="submit"
+          name="btnI"
+          value="Мені пощастить!"
+        />
       </div>
-      <div><input type="hidden" name="hl" value="uk"></div>
+      <div><input type="hidden" name="hl" value="uk" /></div>
     </form>
   </body>
 </html>
